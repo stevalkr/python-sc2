@@ -4,12 +4,9 @@
 from typing import Dict
 
 from sc2.ids.ability_id import AbilityId
-from sc2.ids.unit_typeid import UnitTypeId
-from sc2.ids.upgrade_id import UpgradeId
 
 # from sc2.ids.buff_id import BuffId
 # from sc2.ids.effect_id import EffectId
-
 
 GENERIC_REDIRECT_ABILITIES: Dict[AbilityId, AbilityId] = {
     AbilityId.ARMORYRESEARCH_TERRANSHIPWEAPONSLEVEL1: AbilityId.RESEARCH_TERRANSHIPWEAPONS,

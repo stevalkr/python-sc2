@@ -3,13 +3,10 @@
 
 from typing import Dict, Set
 
-from sc2.ids.ability_id import AbilityId
 from sc2.ids.unit_typeid import UnitTypeId
-from sc2.ids.upgrade_id import UpgradeId
 
 # from sc2.ids.buff_id import BuffId
 # from sc2.ids.effect_id import EffectId
-
 
 UNIT_TECH_ALIAS: Dict[UnitTypeId, Set[UnitTypeId]] = {
     UnitTypeId.BARRACKSFLYING: {UnitTypeId.BARRACKS},
