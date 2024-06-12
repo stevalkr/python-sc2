@@ -319,7 +319,6 @@ class BuffId(enum.Enum):
     def __repr__(self) -> str:
         return f"BuffId.{self.name}"
 
-
     @classmethod
     def _missing_(cls, value: int) -> BuffId:
         return cls.NULL
