@@ -1595,7 +1595,6 @@ class AbilityId(enum.Enum):
     def __repr__(self) -> str:
         return f"AbilityId.{self.name}"
 
-
     @classmethod
     def _missing_(cls, value: int) -> AbilityId:
         return cls.NULL_NULL

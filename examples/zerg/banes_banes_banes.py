@@ -34,7 +34,8 @@ class BanesBanesBanes(BotAI):
                 unit.attack(self.select_target())
 
         # If supply is low, train overlords
-        if self.supply_left < 2 and larvae and self.can_afford(UnitTypeId.OVERLORD) and not self.already_pending(UnitTypeId.OVERLORD):
+        if self.supply_left < 2 and larvae and self.can_afford(UnitTypeId.OVERLORD
+                                                               ) and not self.already_pending(UnitTypeId.OVERLORD):
             larvae.random.train(UnitTypeId.OVERLORD)
             return
 
@@ -50,9 +51,7 @@ class BanesBanesBanes(BotAI):
 
         # If all our townhalls are dead, send all our units to attack
         if not self.townhalls:
-            for unit in self.units.of_type(
-                {UnitTypeId.DRONE, UnitTypeId.QUEEN, UnitTypeId.ZERGLING}
-            ):
+            for unit in self.units.of_type({UnitTypeId.DRONE, UnitTypeId.QUEEN, UnitTypeId.ZERGLING}):
                 unit.attack(self.enemy_start_locations[0])
             return
 
