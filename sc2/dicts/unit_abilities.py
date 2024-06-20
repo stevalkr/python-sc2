@@ -654,7 +654,7 @@ UNIT_ABILITIES: Dict[UnitTypeId, Set[AbilityId]] = {
     },
     UnitTypeId.ZERGLING: {
         AbilityId.ATTACK_ATTACK, AbilityId.BURROWDOWN_ZERGLING, AbilityId.HOLDPOSITION_HOLD,
-        AbilityId.MORPHTOBANELING_CANCEL, AbilityId.MOVE_MOVE, AbilityId.PATROL_PATROL, AbilityId.SMART,
+        AbilityId.MORPHTOBANELING_BANELING, AbilityId.MOVE_MOVE, AbilityId.PATROL_PATROL, AbilityId.SMART,
         AbilityId.STOP_STOP
     },
     UnitTypeId.ZERGLINGBURROWED: {AbilityId.BURROWUP_ZERGLING}

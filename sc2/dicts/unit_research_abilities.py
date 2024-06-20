@@ -190,21 +190,21 @@ RESEARCH_INFO: Dict[UnitTypeId, Dict[UpgradeId, Dict[str, Union[AbilityId, bool,
         UpgradeId.HIGHCAPACITYBARRELS: {
             'ability': AbilityId.RESEARCH_INFERNALPREIGNITER
         },
+        UpgradeId.HURRICANETHRUSTERS: {
+            'ability': AbilityId.FACTORYTECHLABRESEARCH_CYCLONERESEARCHHURRICANETHRUSTERS
+        },
         UpgradeId.SMARTSERVOS: {
             'ability': AbilityId.RESEARCH_SMARTSERVOS,
             'required_building': UnitTypeId.ARMORY
-        },
-        UpgradeId.TEMPESTGROUNDATTACKUPGRADE: {
-            'ability': AbilityId.FACTORYTECHLABRESEARCH_CYCLONERESEARCHHURRICANETHRUSTERS
         }
     },
     UnitTypeId.FLEETBEACON: {
-        UpgradeId.MICROBIALSHROUD: {
-            'ability': AbilityId.FLEETBEACONRESEARCH_TEMPESTRESEARCHGROUNDATTACKUPGRADE,
-            'requires_power': True
-        },
         UpgradeId.PHOENIXRANGEUPGRADE: {
             'ability': AbilityId.RESEARCH_PHOENIXANIONPULSECRYSTALS,
+            'requires_power': True
+        },
+        UpgradeId.TEMPESTGROUNDATTACKUPGRADE: {
+            'ability': AbilityId.FLEETBEACONRESEARCH_TEMPESTRESEARCHGROUNDATTACKUPGRADE,
             'requires_power': True
         },
         UpgradeId.VOIDRAYSPEEDUPGRADE: {
@@ -415,14 +415,14 @@ RESEARCH_INFO: Dict[UnitTypeId, Dict[UpgradeId, Dict[str, Union[AbilityId, bool,
         }
     },
     UnitTypeId.STARPORTTECHLAB: {
-        UpgradeId.AMPLIFIEDSHIELDING: {
-            'ability': AbilityId.STARPORTTECHLABRESEARCH_RESEARCHRAVENINTERFERENCEMATRIX
-        },
         UpgradeId.BANSHEECLOAK: {
             'ability': AbilityId.RESEARCH_BANSHEECLOAKINGFIELD
         },
         UpgradeId.BANSHEESPEED: {
             'ability': AbilityId.RESEARCH_BANSHEEHYPERFLIGHTROTORS
+        },
+        UpgradeId.INTERFERENCEMATRIX: {
+            'ability': AbilityId.STARPORTTECHLABRESEARCH_RESEARCHRAVENINTERFERENCEMATRIX
         }
     },
     UnitTypeId.TEMPLARARCHIVE: {
