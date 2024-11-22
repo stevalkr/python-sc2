@@ -139,7 +139,7 @@ jobs:
         # Python 3.8 support has been dropped because numpy >=1.26.0 requires Python >=3.9 (this numpy version is required to run python 3.12)
         # Python 3.9 support has been dropped since numpy >=2.1.0 (this numpy version is required to run python 3.13)
         os: [macos-latest, windows-latest, ubuntu-latest]
-        python-version: ['3.10', '3.11', '3.12', '3.13']
+        python-version: ['3.9', '3.10', '3.11', '3.12', '3.13']
 
     steps:
     - uses: actions/checkout@v3
