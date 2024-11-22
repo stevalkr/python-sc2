@@ -5,6 +5,8 @@ on:
   push:
     paths:
     - dockerfiles/**
+    - poetry.lock
+    - pyproject.toml
     - .github/workflows/docker-ci.yml
   pull_request:
     branches:

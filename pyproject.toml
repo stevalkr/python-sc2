@@ -38,7 +38,10 @@ numpy = [
 ]
 portpicker = "^1.4.0"
 s2clientprotocol = "^5.0.7"
-scipy = "^1.7.1"
+scipy = [
+    { version = ">=1.14.1", markers = "python_version >= '3.13'" },
+    { version = "^1.7.1", markers = "python_version < '3.13'" },
+]
 protobuf = "<4.0.0"
 
 [tool.poetry.group.dev.dependencies]
