@@ -1025,7 +1025,12 @@ class Unit:
     def orders(self) -> List[UnitOrder]:
         """ Returns the a list of the current orders. """
         # TODO: add examples on how to use unit orders
-        return [UnitOrder.from_proto(order, self._bot_object) for order in self._proto.orders]
+        ret = []
+        for order in self._proto.orders:
+            if order.ability_id in self._bot_object.game_data.abilities:
+                ret.append(UnitOrder.from_proto(order, self._bot_object))
+        return ret
+        # return [UnitOrder.from_proto(order, self._bot_object) for order in self._proto.orders]
 
     @cached_property
     def order_target(self) -> Optional[Union[int, Point2]]:
